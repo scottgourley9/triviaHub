@@ -1,0 +1,17 @@
+angular.module('app').directive('clickAnimationDirective', function($document){
+  return {
+
+    restrict: 'A',
+    link: function(scope, element, attrs) {
+      $(element).click(function(){
+          $(this).addClass('animated wobble');
+          $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass('animated wobble');
+          });
+
+
+
+      })
+    }
+  }
+})

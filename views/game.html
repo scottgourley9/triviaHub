@@ -1,0 +1,41 @@
+
+
+<section id="gameSection">
+  <button ng-hide='hidden'class="newGame hvr-grow" ng-click="startNewGame()"><img src="http://flaticons.net/icons/Application/Command-Reset.png" alt="restart" /></button>
+
+  <div ng-hide='hidden' class="scoreAndLives">
+    <div class="lives">Lives:
+        <my-directive class="theLives"></my-directive>
+
+    </div>
+
+    <div>Score: {{score}}</div>
+
+  </div>
+  <correct answer="correct"></correct>
+
+<button ng-hide='startButtonHidden' class="hvr-grow" ng-click="getData()" type="button" name="button">Start Game</button>
+
+
+
+<section ng-hide='hidden' class="questionSection">
+<div class="cat">
+Category:
+{{items[0].category.title}}
+</div>
+<div class='value'>
+Value: {{items[0].value}}
+</div>
+<div class="question">
+Question: {{items[0].question}}
+</div>
+
+</section>
+<div class="compAnswer" ng-hide="answerHidden">Answer: {{items[0].answer}}</div>
+
+
+    <li><input ng-hide='hidden' class='answer' ng-model="userAnswer" placeholder="Enter your answer"><button ng-hide='hidden' class="hvr-grow submitButton" ng-click="compareAnswer(userAnswer)">Submit</button></li>
+
+
+
+</section>

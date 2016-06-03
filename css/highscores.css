@@ -1,0 +1,15 @@
+.highScoresSection {
+
+}
+
+.highScoresCss {
+  display: flex;
+  width: 100%;
+
+}
+.highScoresCss div {
+  font-size: 50px;
+  display: flex;
+
+
+}

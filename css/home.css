@@ -1,0 +1,21 @@
+#homeSection {
+height: 85vh;
+width: 100%;
+
+}
+.welcome {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h1 {
+    font-size: 60px;
+    color: #FFE887;
+    text-shadow:
+    -1px -1px 0 #002510,
+    1px -1px 0 #002510,
+    -1px 1px 0 #002510,
+    1px 1px 0 #002510;
+}

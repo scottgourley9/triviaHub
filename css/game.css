@@ -1,0 +1,92 @@
+#gameSection {
+  background-image: url('http://www.clockhousetheatre.com/images/stage.jpg');
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 85vh;
+
+}
+button:focus {
+  outline: none;
+}
+.newGame {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+  margin-top: -10px;
+
+}
+.newGame img {
+  height: 35px;
+  width: 35px;
+}
+.scoreAndLives {
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.lives {
+  display: flex;
+}
+.theLives {
+  display: flex;
+}
+button {
+  margin-top: 0px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: orange;
+  background-color: white;
+}
+.answer {
+  font-size: 30px;
+  border-radius: 10px;
+  color: orange;
+  background-color: white;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.compAnswer {
+  font-size: 30px;
+  border-radius: 5px;
+  color: orange;
+  background-color: white;
+  margin-top: 20px;
+}
+.questionSection {
+  margin-top: 0px;
+  width: 50vw;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.question {
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+
+}
+.cat {
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+
+}
+.value {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.submitButton {
+  margin-bottom: 14px;
+}
