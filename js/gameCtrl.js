@@ -75,7 +75,7 @@ else if(myService.catNum === 0){
 })();
 $scope.getData = function(){
 
-$scope.countDown = 5;
+$scope.countDown = 30;
 time();
 
 
