@@ -3,11 +3,12 @@
   height: 94vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
 .highScoresCss {
@@ -22,5 +23,23 @@
 .highScoresCss div {
   font-size: 50px;
   text-align: center;
+  padding-top: 70px;
+
+}
+@media (max-width: 768px) {
+  .highScoresSection {
+    background-image: url('http://www.pathguide.com/Images/Content/gold-trophy1.jpg');
+    height: 78vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+
+  }
 
 }
