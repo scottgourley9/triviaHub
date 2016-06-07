@@ -1,7 +1,6 @@
 angular.module("app").service("myService", function($http, $q, $interval){
 
 
-
  var startingUserArr = [{name: "Billy Beemin", score: 3800},{name: "Sarah Jackson", score: 3400},{name: "Willie Mays", score: 2000},{name: "Billy Beemin", score: 1700},{name: "Mel Gibble", score: 1200},{name: "Steph Murphy", score: 800}];
 this.custom = 0;
 this.getData = function(category){

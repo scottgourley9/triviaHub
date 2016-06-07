@@ -1,4 +1,5 @@
-angular.module("app").controller("gameCtrl", function($document, $timeout, $interval, $scope, myService, picService, $state){
+angular.module("app").controller("gameCtrl", function($rootScope, $document, $timeout, $interval, $scope, myService, picService, $state){
+
 $scope.hidden = false;
 $scope.count = 0;
 var counter = 0;
@@ -8,7 +9,32 @@ $scope.test = false;
 var questionCounter = -1;
 
 
+var timer;
+function time(){
+  timer = $interval(function(){
+    $scope.countDown--;
+    if($scope.countDown===0){
+      $scope.stopTimer();
+      $scope.compareAnswer();
+    }
+
+  }, 1000)
+}
+$scope.stopTimer = function(){
+  $interval.cancel(timer);
+  timer = undefined;
+}
+
 $scope.backgroundImages = (function(){
+$scope.stopTimer();
+$rootScope.$on('$stateChangeStart', function(){
+  if(timer){
+  $scope.stopTimer();
+}
+$scope.n = true;
+picService.remove($scope.n);
+
+})
 if(myService.catNum === 42){
   $('.gameSection').css('background-image', 'url("http://gamerlimit.com/wp-content/uploads/2016/04/original.jpg")');
 }
@@ -48,25 +74,11 @@ else if(myService.catNum === 0){
 
 })();
 $scope.getData = function(){
-$scope.countDown = 30;
 
-var timer;
-function time(){
-  timer = $interval(function(){
-    $scope.countDown--;
-    if($scope.countDown===0){
-      $scope.stopTimer();
-      $scope.compareAnswer();
-    }
-
-  }, 1000)
-}
+$scope.countDown = 5;
 time();
 
-  $scope.stopTimer = function(){
-    $interval.cancel(timer);
-    timer = undefined;
-  }
+
 
 
   myService.getData(myService.catNum).then(function(responseData){
@@ -149,6 +161,7 @@ $scope.compareAnswer = function() {
       $scope.userAnswer = '';
     }
   }
+
 
 };
 })
