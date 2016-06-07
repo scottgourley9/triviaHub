@@ -1,10 +1,18 @@
 .chooseCat {
   display: flex;
   justify-content: center;
-  background-image: url('https://images.alphacoders.com/254/25401.jpg');
+  background-image: url('https://www.walldevil.com/wallpapers/w03/870969-antique-books-bookshelf-desks-library-objects.jpg');
   background-repeat: no-repeat;
   height: 94vh;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
 
+}
+.chooseCat h1 {
+  color: white;
+  font-size: 5vh;
+  font-family: sans-serif;
 }
 .ol {
   font-size: 5vh;

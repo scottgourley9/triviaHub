@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   font-size: 80px;
+  font-family: sans-serif;
 }
 .userName {
   height: 80px;
@@ -19,4 +20,17 @@
 }
 .theirScore {
   color: gold;
+  text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black; 
+}
+@media (max-width: 768px) {
+  .userName {
+    font-size: 45px;
+    margin-top: 10vh;
+
+  }
+
 }

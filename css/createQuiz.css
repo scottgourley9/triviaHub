@@ -8,6 +8,7 @@
     1px -1px 0 white,
     -1px 1px 0 white,
     1px 1px 0 white;
+    font-family: sans-serif;
 }
 .titleSection {
   font-size: 40px;
@@ -24,7 +25,7 @@
 .createQuizSection {
   display: flex;
   justify-content: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
 
 }
 .userQuestionsSection {
@@ -46,4 +47,10 @@ textarea {
 }
 .one{
   opacity: .75;
+}
+@media (max-width: 768px) {
+  textarea {
+    height: 300px;
+  }
+
 }

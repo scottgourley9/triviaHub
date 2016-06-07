@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  font-family: sans-serif;
 
 }
 .triviaLetters img {
@@ -22,6 +23,7 @@
 .theStartButton {
   height: 150px;
   width: 150px;
+
 
 }
 
