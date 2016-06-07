@@ -1,4 +1,4 @@
-angular.module('app').controller('outoflivesController', function($state, $scope, myService){
+angular.module('app').controller('noMoreQuestionsCtrl', function($state, $scope, myService){
   $scope.yourScore = myService.scoreFromGame;
 
   $scope.newGame = function(){
@@ -7,7 +7,8 @@ angular.module('app').controller('outoflivesController', function($state, $scope
   $scope.goHome = function(){
     $state.go('home');
   }
-  $scope.goToPostScore = function(){
-    $state.go('postScore');
+  $scope.goToCreateQuiz = function(){
+    $state.go('createQuiz');
+    
   }
 })

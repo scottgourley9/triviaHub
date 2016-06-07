@@ -3,7 +3,8 @@ angular.module("app", ['ui.router']).config(function($stateProvider, $urlRouterP
   $stateProvider
   .state('home', {
     url: '/home',
-    templateUrl: "views/home.html"
+    templateUrl: "views/home.html",
+    controller: 'homeCtrl'
 
   })
   .state('game', {
@@ -39,7 +40,21 @@ angular.module("app", ['ui.router']).config(function($stateProvider, $urlRouterP
     url: '/chooseCategory',
     templateUrl: 'views/chooseCategory.html',
     controller: 'chooseCategoryCtrl'
-
+  })
+  .state('createQuiz', {
+    url: '/createQuiz',
+    templateUrl: 'views/createQuiz.html',
+    controller: 'createQuizCtrl'
+  })
+  .state('createQuizExplained', {
+    url: '/createQuizExplained',
+    templateUrl: 'views/createQuizExplained.html',
+    controller: 'createQuizExplainedCtrl'
+  })
+  .state('noMoreQuestions', {
+    url: '/noMoreQuestions',
+    templateUrl: 'views/noMoreQuestions.html',
+    controller: 'noMoreQuestionsCtrl'
   })
 
 

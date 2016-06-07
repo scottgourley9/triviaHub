@@ -1,8 +1,8 @@
 angular.module('app').service('picService', function(){
   var picArr = [
-    'http://www.clker.com/cliparts/P/Q/t/5/E/r/white-stick-figure.svg',
-    'http://www.clker.com/cliparts/P/Q/t/5/E/r/white-stick-figure.svg',
-    'http://www.clker.com/cliparts/P/Q/t/5/E/r/white-stick-figure.svg'
+    'http://pngimg.com/upload/heart_PNG691.png',
+    'http://pngimg.com/upload/heart_PNG691.png',
+    'http://pngimg.com/upload/heart_PNG691.png'
   ]
   this.getPicData = function(){
 
@@ -12,14 +12,14 @@ angular.module('app').service('picService', function(){
     if(n){
       picArr.splice(0);
       for(var i = 0; i < 3; i++){
-        picArr.push('http://www.clker.com/cliparts/P/Q/t/5/E/r/white-stick-figure.svg');
+        picArr.push('http://pngimg.com/upload/heart_PNG691.png');
       }
     }
     else {
       picArr.splice(0, 1);
       if(picArr.length === 0){
         for(var i = 0; i < 3; i++){
-          picArr.push('http://www.clker.com/cliparts/P/Q/t/5/E/r/white-stick-figure.svg');
+          picArr.push('http://pngimg.com/upload/heart_PNG691.png');
         }
       }
 

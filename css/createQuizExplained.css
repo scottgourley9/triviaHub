@@ -1,0 +1,20 @@
+.createQuizExplained {
+  background-image: url('http://www.ecybex.co.kr/files/attach/images/1251/5718e8c9216d340c34e4aab47c4248ac.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+  padding: 50px;
+  font-size: 20px;
+  color: lightyellow;
+  text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+}
+.createQuizExplained p {
+  padding-top: 10px;
+}

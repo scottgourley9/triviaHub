@@ -1,0 +1,49 @@
+.createQuizFullPage {
+  background-image: url('http://cdn9.staztic.com/app/a/3016/3016783/cool-white-wallpaper-3-4-s-307x512.jpg');
+  height: 94vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.titleSection {
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.createQuizSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+
+}
+.userQuestionsSection {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  font-size: 20px;
+}
+.userQuestionsSection input {
+  font-size: 30px;
+
+}
+textarea {
+  height: 80px;
+  font-size: 30px;
+}
+.addQuestionButton {
+  margin-top: 15px;
+}
+.one{
+  opacity: .75;
+}

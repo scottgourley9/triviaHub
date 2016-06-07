@@ -1,0 +1,56 @@
+.chooseCat {
+  display: flex;
+  justify-content: center;
+  background-image: url('https://images.alphacoders.com/254/25401.jpg');
+  background-repeat: no-repeat;
+  height: 94vh;
+
+}
+.ol {
+  font-size: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding-top: 2vh;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  align-items: center;
+
+
+}
+.ol div {
+  padding-top: 2vh;
+  cursor: alias;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  width: 50vw;
+}
+.ol div:hover {
+  background-color: yellow;
+  color: black;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+
+
+}

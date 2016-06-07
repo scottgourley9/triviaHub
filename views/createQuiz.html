@@ -1,0 +1,20 @@
+<section class="createQuizFullPage">
+  <div class="titleSection"><button type="button">Add to Existing Quiz</button>
+    Fill out the Question Form
+    <button type="button" ng-click="pageReload()">Start Brand New Quiz</button>
+  </div>
+  <section class="createQuizSection">
+
+  <div class="userQuestionsSection">
+    <input class="one"type="text" ng-model="userCat" placeholder="Enter your category...">Example: Sports
+    <input class="one"type="text" ng-model="userValue" placeholder="Enter the question value...">Example: 600
+    <textarea class="one"ng-model="userQuestion" placeholder="Enter your question..."></textarea>Example: How many NBA Championships did Michael Jordan win?
+    <input class="one"type="text" ng-model="userAnswer" placeholder="Enter your answer...">Example: 6
+  <button class="addQuestionButton"ng-click="createQuestion()"type="button" >Add Question to your Quiz</button>
+  <button type="button" ng-click="finalizeQuiz()">Finalize your Quiz</button>
+
+  </div>
+
+
+  </section>
+</section>

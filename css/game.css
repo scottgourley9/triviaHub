@@ -1,14 +1,19 @@
-#gameSection {
-  background-image: url('http://www.clockhousetheatre.com/images/stage.jpg');
+.gameSection {
+  background-color: black;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  height: 85vh;
-
+  height: 94vh;
+  text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
 }
+
 button:focus {
   outline: none;
 }
@@ -55,7 +60,7 @@ button {
   margin-top: 20px;
 }
 .compAnswer {
-  font-size: 30px;
+  font-size: 50px;
   border-radius: 5px;
   color: orange;
   background-color: white;
