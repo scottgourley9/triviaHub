@@ -1,5 +1,5 @@
 .postScoreSection {
-  background-image: url('http://thefuturebuzz.com/wp-content/uploads/2013/07/spotlight.jpg');
+  background-image: url("/images/literature.jpg");
   height: 94vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@
   -1px -1px 0 black,
   1px -1px 0 black,
   -1px 1px 0 black,
-  1px 1px 0 black; 
+  1px 1px 0 black;
 }
 @media (max-width: 768px) {
   .userName {
