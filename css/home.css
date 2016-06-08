@@ -1,5 +1,5 @@
 .theMainMain {
-  background-image: url('https://www.decalgirl.com/assets/designs/large/library.jpg');
+  background-image: url('/images/library.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 94vh;
@@ -26,6 +26,9 @@
 
 
 }
+.menu {
+  visibility: hidden;
+}
 
 .howTo {
   font-size: 50px
@@ -38,4 +41,6 @@
     height: 15vh;
   }
 
-}
+    nav {
+      padding-top: 30px;
+    }

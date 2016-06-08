@@ -1,7 +1,7 @@
 .chooseCat {
   display: flex;
   justify-content: center;
-  background-image: url('https://www.walldevil.com/wallpapers/w03/870969-antique-books-bookshelf-desks-library-objects.jpg');
+  background-image: url('/images/chooseCatBack.jpg');
   background-repeat: no-repeat;
   height: 94vh;
   flex-direction: column;
@@ -10,9 +10,14 @@
 
 }
 .chooseCat h1 {
-  color: white;
+  color: #FFE887;
   font-size: 5vh;
   font-family: sans-serif;
+  text-shadow:
+    -1px -1px 0 brown,
+    1px -1px 0 brown,
+    -1px 1px 0 brown,
+    1px 1px 0 brown;
 }
 .ol {
   font-size: 5vh;

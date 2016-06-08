@@ -9,12 +9,9 @@ nav {
   justify-content: space-around;
   padding-top: 14px;
   background-color: #001C04;
+
 }
-@media (max-width: 768px) {
-  nav {
-    padding-top: 30px;
-  }
-}
+
 input:focus {
   outline: none;
 }
