@@ -78,21 +78,30 @@ $scope.getData = function(){
 $scope.countDown = 30;
 time();
 
+if(myService.custom){
+  questionCounter++;
+  $scope.items = myService.customQuestionArrToPost[questionCounter];
+  if(questionCounter > myService.customQuestionArrToPost.length - 1){
+    $scope.pushScoreToPostScore = (function(){
+      myService.theScore($scope.score);
+    })();
+    $state.go('noMoreQuestions');
+  }
+  $scope.answerHidden = true;
+  $scope.userAnswer = '';
+  $scope.startButtonHidden = true;
+  $('.cat').addClass('animated slideInLeft');
+  $('.value').addClass('animated slideInLeft');
+  $('.question').addClass('animated slideInLeft');
 
+}
+
+else {
 
 
   myService.getData(myService.catNum).then(function(responseData){
     $scope.items = responseData;
-    if(myService.custom){
-      questionCounter++;
-      $scope.items = myService.customQuestionArrToPost[questionCounter];
-      if(questionCounter > myService.customQuestionArrToPost.length - 1){
-        $scope.pushScoreToPostScore = (function(){
-          myService.theScore($scope.score);
-        })();
-        $state.go('noMoreQuestions');
-      }
-    }
+
     $scope.answerHidden = true;
     $scope.userAnswer = '';
     $scope.startButtonHidden = true;
@@ -107,7 +116,7 @@ time();
 
 
   })
-
+}
 
 $scope.startNewGame = function(){
   $scope.stopTimer();
