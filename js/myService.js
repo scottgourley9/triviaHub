@@ -13,6 +13,31 @@ this.getData = function(category){
     var infoFromAPI = repsonse.data;
     var randNum = Math.floor((Math.random()*infoFromAPI.length) + 1);
     var testing = infoFromAPI[randNum];
+
+    var ansArr = testing.answer.split('');
+    if(ansArr[0]==='<'){
+      ansArr.splice(0, 3);
+      ansArr.splice((ansArr.length - 4), 4);
+      var theAnswer = ansArr.join('');
+      testing.answer = theAnswer;
+    }
+    else if(ansArr[0]==='"'){
+      ansArr.splice(0, 1);
+      ansArr.splice((ansArr.length - 1), 1);
+      var theAnswer = ansArr.join('');
+      testing.answer = theAnswer;
+    }
+    else if(ansArr[0]==='t' && ansArr[1]==='h' && ansArr[2]==='e' && ansArr[3]===' '){
+      ansArr.splice(0, 4);
+      var theAnswer = ansArr.join('');
+      testing.answer = theAnswer;
+    }
+    else if(ansArr[0]==='a' && ansArr[1]===' '){
+      ansArr.splice(0, 2);
+      var theAnswer = ansArr.join('');
+      testing.answer = theAnswer;
+    }
+
     deferred.resolve(testing);
   })
   return deferred.promise;
