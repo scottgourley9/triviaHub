@@ -1,5 +1,5 @@
 #noMoreQuestionsSection {
-background-image: url('./images/outOf.jpg');
+background-image: url('../images/outOf.jpg');
 height: 94vh;
 display: flex;
 align-items: center;

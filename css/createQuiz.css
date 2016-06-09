@@ -1,5 +1,5 @@
 .createQuizFullPage {
-  background-image: url('./images/createQ.jpg');
+  background-image: url('../images/createQ.jpg');
   height: 94vh;
   background-repeat: no-repeat;
   background-size: cover;
