@@ -1,7 +1,7 @@
 .chooseCat {
   display: flex;
   justify-content: center;
-  background-image: url('./images/chooseCatBack.jpg');
+  background-image: url('../images/chooseCatBack.jpg');
   background-repeat: no-repeat;
   height: 94vh;
   flex-direction: column;
