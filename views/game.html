@@ -33,7 +33,7 @@ Question: {{items.question}}
 <div class="compAnswer" ng-hide="answerHidden">Answer: {{items.answer}}</div>
 
 
-    <div><input ng-hide='hidden' class='answer' ng-model="userAnswer" placeholder="Enter your answer"><button ng-hide='hidden' class="hvr-grow submitButton" ng-click="compareAnswer(userAnswer)">Submit</button></div>
+    <div><input ng-keyup="enterKey($event)"ng-hide='hidden' class='answer' ng-model="userAnswer" placeholder="Enter your answer"><button ng-hide='hidden' class="hvr-grow submitButton" ng-click="compareAnswer(userAnswer)">Submit</button></div>
 
 
 

@@ -8,6 +8,11 @@ $scope.answerHidden = true;
 $scope.test = false;
 var questionCounter = -1;
 
+$scope.enterKey = function(e){
+  if(e.keyCode===13){
+$scope.compareAnswer($scope.userAnswer);
+}
+}
 
 var timer;
 function time(){
