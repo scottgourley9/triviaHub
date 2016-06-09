@@ -1,5 +1,5 @@
 .howToPlayPage {
-  background-image: url('/images/howToPlay.png');
+  background-image: url('./images/howToPlay.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 94vh;

@@ -1,5 +1,5 @@
 .highScoresSection {
-  background-image: url('/images/highScores.jpg');
+  background-image: url('./images/highScores.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
